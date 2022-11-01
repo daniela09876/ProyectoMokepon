@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
+
+body {
+  font-family: "Bungee Inline", cursive;
+  background-image: url("imagenesMokepon/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: white;
+  font-size: 70px;
+}
+
+.subtitulo {
+  color: white;
+}
+
+.tarjetas,
+.tarjetas-ataques {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+  height: 310px;
+  width: 230px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.tarjeta-de-mokepon img {
+  width: 145px;
+}
+
+#boton-mascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 14px;
+  background: #ffa040;
+  border: 2px;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+  margin: 20px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color:#ffa040;
+}
+
+#seleccionar-ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-de-ataque {
+  background-color: #ffa040;
+  color: white;
+  border: 2px;
+  font-family: "Bungee Inline", cursive;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 60px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#mensajes {
+  width: 280px;
+  background: transparent;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+  font-size: 30px;
+}
+
+#boton-reiniciar {
+  color: white;
+  font-family: "Bungee Inline", cursive;
+  border-radius: 10px;
+  background-color: #ffa040;
+  width: 100px;
+  height: 35px;
+  font-size: 13px;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  color: white;
+  width: 300px;
+  justify-content: space-around;
+  justify-items: center;
+  gap: 10px;
+}
+
+#vidas-jugador,
+#vidas-enemigo {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.ataques-jugador,
+.ataques-enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#ver-mapa button{
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background:#ffa040;
+  border: 2px;
+  color: white;
+  font-family: "Bungee Inline", cursive;
+  margin: 10px s0;
+}
+
+@media (max-width: 560px) {
+  .tarjetas,
+  .tarjetas-ataques,
+  .titulo,
+  .subtitulo {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 412px) {
+  #ver-mapa div{ 
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    
+  }
+}
